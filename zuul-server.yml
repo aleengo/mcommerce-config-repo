@@ -1,0 +1,13 @@
+server:
+  port: 6069
+
+eureka: #Eureka
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:6061/eureka/
+
+spring:
+  security: #Spring Security
+    user:
+      name: utilisateur
+      password: mdp

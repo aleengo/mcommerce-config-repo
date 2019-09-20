@@ -1,8 +1,10 @@
+
 server:
-  port: 9090
+  port: 9091
+
 spring:
   application:
-    name: ms-products
+    name: ms-commands
   h2:
     console:
       enabled: true
@@ -11,9 +13,9 @@ spring:
     database-platform: org.hibernate.dialect.H2Dialect
   datasource:
     sql-script-encoding: UTF-8
-    url: jdbc:h2:mem:productdb
+    url: jdbc:h2:mem:commands
     driver-class-name: org.h2.Driver
-    name: productdb
+    name: commandsdb
     username: sa
     password:
 
@@ -24,10 +26,6 @@ eureka: # EUREKA
 
 info:
   app:
-    name: ms-products
-    description: microservice responsable de la gestion des produits
+    name: ms-commands
+    description: microservice responsable de la gestion des commandes
     version: 0.1.0
-
-config: # Nos configurations
-  products:
-    limit: 3
