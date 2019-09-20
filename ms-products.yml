@@ -1,6 +1,5 @@
 server:
   port: 9090
-
 spring:
   application:
     name: ms-products
@@ -18,8 +17,11 @@ spring:
     username: sa
     password:
 
+eureka: # EUREKA
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:6061/eureka/
 
-# Nos configurations
-config:
+config: # Nos configurations
   products:
     limit: 3
