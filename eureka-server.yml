@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: nflix-eureka-server # name of eureka server
+    name: eureka-server # name of eureka server
 
 eureka:
   client:
