@@ -5,3 +5,7 @@ server:
 spring:
   application:
     name: ms-clientui
+
+ms-products:
+  ribbon:
+    listOfServers: localhost:7071,localhost:7072
