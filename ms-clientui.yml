@@ -3,8 +3,13 @@ server:
   port: 8080
 
 spring:
-  application:
+  application: # Identity
     name: ms-clientui
+
+eureka: # Eureka
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:6061/eureka/
 
 ms-products:
   ribbon:
