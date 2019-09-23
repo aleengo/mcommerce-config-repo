@@ -8,4 +8,4 @@ spring:
 
 ms-products:
   ribbon:
-    listOfServers: localhost:7071,localhost:7072
+    listOfServers: http://localhost:7071,http://localhost:7072
